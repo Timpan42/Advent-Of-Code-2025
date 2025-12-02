@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2883EC-BABF-4667-84CC-0008E3828198}|Main\\Main.csproj|c:\\users\\timfagerdal\\code\\advent-of-code-2025\\main\\main\\day2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2883EC-BABF-4667-84CC-0008E3828198}|Main\\Main.csproj|solutionrelative:main\\day2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2883EC-BABF-4667-84CC-0008E3828198}|Main\\Main.csproj|c:\\users\\timfagerdal\\code\\advent-of-code-2025\\main\\main\\inputfiles\\day2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1A2883EC-BABF-4667-84CC-0008E3828198}|Main\\Main.csproj|solutionrelative:main\\inputfiles\\day2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2883EC-BABF-4667-84CC-0008E3828198}|Main\\Main.csproj|c:\\users\\timfagerdal\\code\\advent-of-code-2025\\main\\main\\inputfiles\\day2 - test.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1A2883EC-BABF-4667-84CC-0008E3828198}|Main\\Main.csproj|solutionrelative:main\\inputfiles\\day2 - test.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A2883EC-BABF-4667-84CC-0008E3828198}|Main\\Main.csproj|c:\\users\\timfagerdal\\code\\advent-of-code-2025\\main\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2883EC-BABF-4667-84CC-0008E3828198}|Main\\Main.csproj|solutionrelative:main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Day2 - Test.txt",
+              "DocumentMoniker": "C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Main\\Main\\InputFiles\\Day2 - Test.txt",
+              "RelativeDocumentMoniker": "Main\\InputFiles\\Day2 - Test.txt",
+              "ToolTip": "C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Main\\Main\\InputFiles\\Day2 - Test.txt",
+              "RelativeToolTip": "Main\\InputFiles\\Day2 - Test.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-02T08:23:01.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Day2.txt",
+              "DocumentMoniker": "C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Main\\Main\\InputFiles\\Day2.txt",
+              "RelativeDocumentMoniker": "Main\\InputFiles\\Day2.txt",
+              "ToolTip": "C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Main\\Main\\InputFiles\\Day2.txt",
+              "RelativeToolTip": "Main\\InputFiles\\Day2.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-02T08:17:54.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Day2.cs",
+              "DocumentMoniker": "C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Main\\Main\\Day2.cs",
+              "RelativeDocumentMoniker": "Main\\Day2.cs",
+              "ToolTip": "C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Main\\Main\\Day2.cs",
+              "RelativeToolTip": "Main\\Day2.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T08:07:48.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Main\\Main\\Program.cs",
+              "RelativeDocumentMoniker": "Main\\Program.cs",
+              "ToolTip": "C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Main\\Main\\Program.cs",
+              "RelativeToolTip": "Main\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T08:04:56.069Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
