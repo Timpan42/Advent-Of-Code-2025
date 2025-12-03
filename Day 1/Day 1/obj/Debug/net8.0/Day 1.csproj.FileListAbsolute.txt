@@ -26,3 +26,4 @@ C:\Users\TimFagerdal\Code\Advent-Of-Code-2025\Day 1\Day 1\obj\Debug\net8.0\refin
 C:\Users\TimFagerdal\Code\Advent-Of-Code-2025\Day 1\Day 1\obj\Debug\net8.0\Day 1.pdb
 C:\Users\TimFagerdal\Code\Advent-Of-Code-2025\Day 1\Day 1\obj\Debug\net8.0\Day 1.genruntimeconfig.cache
 C:\Users\TimFagerdal\Code\Advent-Of-Code-2025\Day 1\Day 1\obj\Debug\net8.0\ref\Day 1.dll
+C:\Users\TimFagerdal\Code\Advent-Of-Code-2025\Day 1\Day 1\obj\Debug\net8.0\Day 1.sourcelink.json

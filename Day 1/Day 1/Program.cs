@@ -111,6 +111,10 @@ internal class Program
 
                 if (currentValue < 0)
                 {
+                    if (SkipFirst)
+                    {
+                        timesAtZero--;
+                    }
                     if (SkipFirst == false)
                     {
                         timesAtZero++;
