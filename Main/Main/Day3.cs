@@ -40,7 +40,6 @@ namespace Main
             }
 
             char hightesValue = '0';
-            char previusHightesValue = hightesValue;
             int index = 0;
 
             for (int i = startIndex; i < sequens.Length - offset; i++)

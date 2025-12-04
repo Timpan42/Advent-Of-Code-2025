@@ -13,8 +13,8 @@ internal class Program
         char[] splitWords = ['L', 'R'];
         try
         {
-            //  StreamReader sr = new StreamReader("C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Day 1\\Day 1\\Input.txt");
-            StreamReader sr = new StreamReader("C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Day 1\\Day 1\\Input.txt");
+            //StreamReader sr = new StreamReader("C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Day 1\\Day 1\\Input.txt");
+            StreamReader sr = new StreamReader("C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Day 1\\Day 1\\Input2.txt");
 
             //StreamReader sr = new StreamReader("..\\Input.txt");
             line = sr.ReadLine();
@@ -89,57 +89,88 @@ internal class Program
                 SkipFirst = true;
             }
 
-            currentValue += value;
-
-            while (currentValue < 0 || currentValue > 99)
+            if (value > 0)
             {
-                bool haveAdded = false;
-                if (currentValue > 99)
+                currentValue += value;
+                timesAtZero = timesAtZero + (value / 100);
+                currentValue = currentValue % 100;
+            }
+            else
+            {
+                int oldValue = currentValue;
+                currentValue -= Math.Abs(value);
+                if (currentValue == 0)
                 {
-                    if (SkipFirst == false)
-                    {
-                        timesAtZero++;
-                        haveAdded = true;
-                        Console.WriteLine("Add 1");
-
-                    }
-
-                    SkipFirst = false;
-                    currentValue = currentValue - 100;
-                    rotated = true;
+                    currentValue++;
                 }
-
                 if (currentValue < 0)
                 {
-                    if (SkipFirst)
+                    if (oldValue != 0)
                     {
-                        timesAtZero--;
-                    }
-                    if (SkipFirst == false)
-                    {
-                        timesAtZero++;
-                        haveAdded = true;
-                        Console.WriteLine("Add 2");
+                        currentValue++;
                     }
 
-                    SkipFirst = false;
-                    currentValue = currentValue + 100;
-                    rotated = true;
-                }
-
-                if (!haveAdded && currentValue % 100 == 0)
-                {
-                    Console.WriteLine("Add 3");
-                    timesAtZero++;
+                    timesAtZero = timesAtZero + ((Math.Abs(value) - oldValue) / 100);
+                    currentValue = currentValue % 100;
                 }
             }
+
+
+
+            //currentValue += value;
+            //while (currentValue < -99 || currentValue > 99)
+            //{
+            //    bool haveAdded = false;
+            //    if (currentValue > 99)
+            //    {
+            //        if (SkipFirst == false)
+            //        {
+
+            //        }
+            //        timesAtZero++;
+            //        haveAdded = true;
+            //        Console.WriteLine("Add 1");
+
+            //        SkipFirst = false;
+            //        currentValue = currentValue - 99;
+            //        rotated = true;
+            //    }
+
+            //    if (currentValue < 0)
+            //    {
+            //        if (SkipFirst == false)
+            //        {
+            //            timesAtZero++;
+            //            haveAdded = true;
+            //            Console.WriteLine("Add 2");
+
+            //        }
+            //        SkipFirst = false;
+            //        currentValue = currentValue + 99;
+            //        rotated = true;
+            //    }
+
+            //    if (!haveAdded && currentValue % 100 == 0)
+            //    {
+            //        Console.WriteLine("Add 3");
+            //        timesAtZero++;
+            //    }
+            //}
+
+
+            //if (!rotated && currentValue == 0)
+            //{
+            //    Console.WriteLine("Add 4");
+            //    timesAtZero++;
+            //}
+
+            //if (currentValue < 0)
+            //{
+            //    currentValue += 100;
+            //}
+
             Console.WriteLine("End: " + currentValue);
 
-            if (!rotated && currentValue == 0)
-            {
-                Console.WriteLine("Add 4");
-                timesAtZero++;
-            }
             Console.WriteLine("Points: " + timesAtZero + '\n');
         }
     }
