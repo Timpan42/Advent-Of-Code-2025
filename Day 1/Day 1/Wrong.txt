@@ -1,0 +1,387 @@
+Start: 50, value: 10, dir:R
+End: 60
+Points: 0
+
+Start: 60, value: -39, dir:L
+End: 21
+Points: 0
+
+Start: 21, value: -30, dir:L
+Add 2
+End: 91
+Points: 1
+
+Start: 91, value: -9, dir:L
+End: 82
+Points: 1
+
+Start: 82, value: 28, dir:R
+Add 1
+End: 10
+Points: 2
+
+Start: 10, value: -27, dir:L
+Add 2
+End: 83
+Points: 3
+
+Start: 83, value: 14, dir:R
+End: 97
+Points: 3
+
+Start: 97, value: -48, dir:L
+End: 49
+Points: 3
+
+Start: 49, value: 8, dir:R
+End: 57
+Points: 3
+
+Start: 57, value: 9, dir:R
+End: 66
+Points: 3
+
+Start: 66, value: 29, dir:R
+End: 95
+Points: 3
+
+Start: 95, value: -13, dir:L
+End: 82
+Points: 3
+
+Start: 82, value: -15, dir:L
+End: 67
+Points: 3
+
+Start: 67, value: 24, dir:R
+End: 91
+Points: 3
+
+Start: 91, value: 11, dir:R
+Add 1
+End: 2
+Points: 4
+
+Start: 2, value: -24, dir:L
+Add 2
+End: 78
+Points: 5
+
+Start: 78, value: -34, dir:L
+End: 44
+Points: 5
+
+Start: 44, value: 9, dir:R
+End: 53
+Points: 5
+
+Start: 53, value: 2, dir:R
+End: 55
+Points: 5
+
+Start: 55, value: -44, dir:L
+End: 11
+Points: 5
+
+Start: 11, value: 18, dir:R
+End: 29
+Points: 5
+
+Start: 29, value: -39, dir:L
+Add 2
+End: 90
+Points: 6
+
+Start: 90, value: -30, dir:L
+End: 60
+Points: 6
+
+Start: 60, value: 31, dir:R
+End: 91
+Points: 6
+
+Start: 91, value: -13, dir:L
+End: 78
+Points: 6
+
+Start: 78, value: 23, dir:R
+Add 1
+End: 1
+Points: 7
+
+Start: 1, value: 7, dir:R
+End: 8
+Points: 7
+
+Start: 8, value: 14, dir:R
+End: 22
+Points: 7
+
+Start: 22, value: 15, dir:R
+End: 37
+Points: 7
+
+Start: 37, value: 25, dir:R
+End: 62
+Points: 7
+
+Start: 62, value: 44, dir:R
+Add 1
+End: 6
+Points: 8
+
+Start: 6, value: 23, dir:R
+End: 29
+Points: 8
+
+Start: 29, value: 18, dir:R
+End: 47
+Points: 8
+
+Start: 47, value: -16, dir:L
+End: 31
+Points: 8
+
+Start: 31, value: 21, dir:R
+End: 52
+Points: 8
+
+Start: 52, value: -16, dir:L
+End: 36
+Points: 8
+
+Start: 36, value: 48, dir:R
+End: 84
+Points: 8
+
+Start: 84, value: -29, dir:L
+End: 55
+Points: 8
+
+Start: 55, value: -9, dir:L
+End: 46
+Points: 8
+
+Start: 46, value: -13, dir:L
+End: 33
+Points: 8
+
+Start: 33, value: -15, dir:L
+End: 18
+Points: 8
+
+Start: 18, value: 33, dir:R
+End: 51
+Points: 8
+
+Start: 51, value: -35, dir:L
+End: 16
+Points: 8
+
+Start: 16, value: -23, dir:L
+Add 2
+End: 93
+Points: 9
+
+Start: 93, value: -49, dir:L
+End: 44
+Points: 9
+
+Start: 44, value: 24, dir:R
+End: 68
+Points: 9
+
+Start: 68, value: -19, dir:L
+End: 49
+Points: 9
+
+Start: 49, value: 19, dir:R
+End: 68
+Points: 9
+
+Start: 68, value: 5, dir:R
+End: 73
+Points: 9
+
+Start: 73, value: 32, dir:R
+Add 1
+End: 5
+Points: 10
+
+Start: 5, value: 99, dir:R
+Add 1
+End: 4
+Points: 11
+
+Start: 4, value: -4, dir:L
+Add 4
+End: 0
+Points: 12
+
+Start: 0, value: -79, dir:L
+End: 21
+Points: 12
+
+Start: 21, value: 94, dir:R
+Add 1
+End: 15
+Points: 13
+
+Start: 15, value: -11, dir:L
+End: 4
+Points: 13
+
+Start: 4, value: 96, dir:R
+Add 1
+End: 0
+Points: 14
+
+Start: 0, value: -63, dir:L
+End: 37
+Points: 14
+
+Start: 37, value: -37, dir:L
+Add 4
+End: 0
+Points: 15
+
+Start: 0, value: -93, dir:L
+End: 7
+Points: 15
+
+Start: 7, value: -7, dir:L
+Add 4
+End: 0
+Points: 16
+
+Start: 0, value: 35, dir:R
+End: 35
+Points: 16
+
+Start: 35, value: 65, dir:R
+Add 1
+End: 0
+Points: 17
+
+Start: 0, value: 34, dir:R
+End: 34
+Points: 17
+
+Start: 34, value: -91, dir:L
+Add 2
+End: 43
+Points: 18
+
+Start: 43, value: -41, dir:L
+End: 2
+Points: 18
+
+Start: 2, value: 98, dir:R
+Add 1
+End: 0
+Points: 19
+
+Start: 0, value: 22, dir:R
+End: 22
+Points: 19
+
+Start: 22, value: -2, dir:L
+End: 20
+Points: 19
+
+Start: 20, value: 80, dir:R
+Add 1
+End: 0
+Points: 20
+
+Start: 0, value: -66, dir:L
+End: 34
+Points: 20
+
+Start: 34, value: -9, dir:L
+End: 25
+Points: 20
+
+Start: 25, value: -25, dir:L
+Add 4
+End: 0
+Points: 21
+
+Start: 0, value: 45, dir:R
+End: 45
+Points: 21
+
+Start: 45, value: 55, dir:R
+Add 1
+End: 0
+Points: 22
+
+Start: 0, value: 15, dir:R
+End: 15
+Points: 22
+
+Start: 15, value: 32, dir:R
+End: 47
+Points: 22
+
+Start: 47, value: 56, dir:R
+Add 1
+End: 3
+Points: 23
+
+Start: 3, value: 97, dir:R
+Add 1
+End: 0
+Points: 24
+
+Start: 0, value: -78, dir:L
+End: 22
+Points: 24
+
+Start: 22, value: -22, dir:L
+Add 4
+End: 0
+Points: 25
+
+Start: 0, value: 46, dir:R
+End: 46
+Points: 25
+
+Start: 46, value: -84, dir:L
+Add 2
+End: 62
+Points: 26
+
+Start: 62, value: -70, dir:L
+Add 2
+End: 92
+Points: 27
+
+Start: 92, value: -27, dir:L
+End: 65
+Points: 27
+
+Start: 65, value: 35, dir:R
+Add 1
+End: 0
+Points: 28
+
+Start: 0, value: 83, dir:R
+End: 83
+Points: 28
+
+Start: 83, value: 23, dir:R
+Add 1
+End: 6
+Points: 29
+
+Start: 6, value: -6, dir:L
+Add 4
+End: 0
+Points: 30
+
+Start: 0, value: -43, dir:L
+End: 57
+Points: 30
+
+Value: 30

@@ -1,0 +1,157 @@
+Start: 50, value: 10, dir:R
+End: 60
+Points: 0
+
+Start: 60, value: 39, dir:L
+End: 21
+Points: 0
+
+Start: 21, value: 30, dir:L
+End: 91
+Points: 1
+
+Start: 91, value: 9, dir:L
+End: 82
+Points: 1
+
+Start: 82, value: 28, dir:R
+End: 10
+Points: 2
+
+Start: 10, value: 27, dir:L
+End: 83
+Points: 3
+
+Start: 83, value: 14, dir:R
+End: 97
+Points: 3
+
+Start: 97, value: 48, dir:L
+End: 49
+Points: 3
+
+Start: 49, value: 8, dir:R
+End: 57
+Points: 3
+
+Start: 57, value: 9, dir:R
+End: 66
+Points: 3
+
+Start: 66, value: 29, dir:R
+End: 95
+Points: 3
+
+Start: 95, value: 13, dir:L
+End: 82
+Points: 3
+
+Start: 82, value: 15, dir:L
+End: 67
+Points: 3
+
+Start: 67, value: 24, dir:R
+End: 91
+Points: 3
+
+Start: 91, value: 11, dir:R
+End: 2
+Points: 4
+
+Start: 2, value: 24, dir:L
+End: 78
+Points: 5
+
+Start: 78, value: 34, dir:L
+End: 44
+Points: 5
+
+Start: 44, value: 9, dir:R
+End: 53
+Points: 5
+
+Start: 53, value: 2, dir:R
+End: 55
+Points: 5
+
+Start: 55, value: 44, dir:L
+End: 11
+Points: 5
+
+Start: 11, value: 18, dir:R
+End: 29
+Points: 5
+
+Start: 29, value: 39, dir:L
+End: 90
+Points: 6
+
+Start: 90, value: 30, dir:L
+End: 60
+Points: 6
+
+Start: 60, value: 31, dir:R
+End: 91
+Points: 6
+
+Start: 91, value: 13, dir:L
+End: 78
+Points: 6
+
+Start: 78, value: 23, dir:R
+End: 1
+Points: 7
+
+Start: 1, value: 7, dir:R
+End: 8
+Points: 7
+
+Start: 8, value: 14, dir:R
+End: 22
+Points: 7
+
+Start: 22, value: 15, dir:R
+End: 37
+Points: 7
+
+Start: 37, value: 25, dir:R
+End: 62
+Points: 7
+
+Start: 62, value: 44, dir:R
+End: 6
+Points: 8
+
+Start: 6, value: 23, dir:R
+End: 29
+Points: 8
+
+Start: 29, value: 18, dir:R
+End: 47
+Points: 8
+
+Start: 47, value: 16, dir:L
+End: 31
+Points: 8
+
+Start: 31, value: 21, dir:R
+End: 52
+Points: 8
+
+Start: 52, value: 16, dir:L
+End: 36
+Points: 8
+
+Start: 36, value: 48, dir:R
+End: 84
+Points: 8
+
+Start: 84, value: 29, dir:L
+End: 55
+Points: 8
+
+Start: 55, value: 9, dir:L
+End: 46
+Points: 8
+
+Value: 8

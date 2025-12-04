@@ -13,11 +13,13 @@ internal class Program
         char[] splitWords = ['L', 'R'];
         try
         {
-            //StreamReader sr = new StreamReader("C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Day 1\\Day 1\\Input.txt");
-            StreamReader sr = new StreamReader("C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Day 1\\Day 1\\Input2.txt");
+            StreamReader sr = new StreamReader("C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Day 1\\Day 1\\Input.txt");
+            //StreamReader sr = new StreamReader("C:\\Users\\TimFagerdal\\Code\\Advent-Of-Code-2025\\Day 1\\Day 1\\Input2.txt");
 
             //StreamReader sr = new StreamReader("..\\Input.txt");
             line = sr.ReadLine();
+
+
 
 
             while (line != null)
@@ -27,16 +29,19 @@ internal class Program
 
                 if (isLeft)
                 {
-                    int value = Convert.ToInt32(split[1]) * -1;
+                    
+//                    int value = Convert.ToInt32(split[1]) * -1;
+                    int value = Convert.ToInt32(split[1]);
+
                     //RotateP1(value);
-                    RotateP2(value);
+                    RotateP2Right(value, 'L');
                 }
                 else
                 {
                     int value = Convert.ToInt32(split[1]);
                     //RotateP1(value);
 
-                    RotateP2(value);
+                    RotateP2Right(value, 'R');
                 }
 
 
@@ -78,9 +83,9 @@ internal class Program
             }
         }
 
-        void RotateP2(int value)
+        void RotateP2Wrong(int value, char dir)
         {
-            Console.WriteLine("Start: " + currentValue + ", value: " + value);
+            Console.WriteLine("Start: " + currentValue + ", value: " + value + ", dir:" + dir);
             bool SkipFirst = false;
             bool rotated = false;
 
@@ -89,86 +94,89 @@ internal class Program
                 SkipFirst = true;
             }
 
-            if (value > 0)
+            currentValue += value;
+            while (currentValue < 0 || currentValue > 99)
+            {
+                bool haveAdded = false;
+                if (currentValue > 99)
+                {
+                    if (SkipFirst == false)
+                    {
+
+                    }
+                    timesAtZero++;
+                    haveAdded = true;
+                    Console.WriteLine("Add 1");
+
+                    SkipFirst = false;
+                    currentValue = currentValue - 100;
+                    rotated = true;
+                }
+
+                if (currentValue < 0)
+                {
+                    if (SkipFirst == false)
+                    {
+                        timesAtZero++;
+                        haveAdded = true;
+                        Console.WriteLine("Add 2");
+
+                    }
+                    SkipFirst = false;
+                    currentValue = currentValue + 100;
+                    rotated = true;
+                }
+
+                if (!haveAdded && currentValue % 100 == 0)
+                {
+                    Console.WriteLine("Add 3");
+                    timesAtZero++;
+                }
+            }
+
+
+            if (!rotated && currentValue == 0)
+            {
+                Console.WriteLine("Add 4");
+                timesAtZero++;
+            }
+
+            if (currentValue < 0)
+            {
+                currentValue += 100;
+            }
+
+            Console.WriteLine("End: " + currentValue);
+
+            Console.WriteLine("Points: " + timesAtZero + '\n');
+        }
+
+        void RotateP2Right(int value, char dir)
+        {
+            Console.WriteLine("Start: " + currentValue + ", value: " + value + ", dir:" + dir);
+
+            if (dir == 'R')
             {
                 currentValue += value;
-                timesAtZero = timesAtZero + (value / 100);
+                timesAtZero += (int)currentValue / (int)100;
                 currentValue = currentValue % 100;
             }
-            else
+            if (dir == 'L')
             {
-                int oldValue = currentValue;
-                currentValue -= Math.Abs(value);
-                if (currentValue == 0)
+                timesAtZero += (int)value / (int)100;
+                value = value % 100;
+                bool startZero = currentValue == 0;
+                currentValue -= value;
+
+                if (currentValue <= 0 && !startZero)
                 {
-                    currentValue++;
+                    timesAtZero++;
                 }
                 if (currentValue < 0)
                 {
-                    if (oldValue != 0)
-                    {
-                        currentValue++;
-                    }
-
-                    timesAtZero = timesAtZero + ((Math.Abs(value) - oldValue) / 100);
-                    currentValue = currentValue % 100;
+                    currentValue = 100 + currentValue;
                 }
             }
-
-
-
-            //currentValue += value;
-            //while (currentValue < -99 || currentValue > 99)
-            //{
-            //    bool haveAdded = false;
-            //    if (currentValue > 99)
-            //    {
-            //        if (SkipFirst == false)
-            //        {
-
-            //        }
-            //        timesAtZero++;
-            //        haveAdded = true;
-            //        Console.WriteLine("Add 1");
-
-            //        SkipFirst = false;
-            //        currentValue = currentValue - 99;
-            //        rotated = true;
-            //    }
-
-            //    if (currentValue < 0)
-            //    {
-            //        if (SkipFirst == false)
-            //        {
-            //            timesAtZero++;
-            //            haveAdded = true;
-            //            Console.WriteLine("Add 2");
-
-            //        }
-            //        SkipFirst = false;
-            //        currentValue = currentValue + 99;
-            //        rotated = true;
-            //    }
-
-            //    if (!haveAdded && currentValue % 100 == 0)
-            //    {
-            //        Console.WriteLine("Add 3");
-            //        timesAtZero++;
-            //    }
-            //}
-
-
-            //if (!rotated && currentValue == 0)
-            //{
-            //    Console.WriteLine("Add 4");
-            //    timesAtZero++;
-            //}
-
-            //if (currentValue < 0)
-            //{
-            //    currentValue += 100;
-            //}
-
             Console.WriteLine("End: " + currentValue);
 
             Console.WriteLine("Points: " + timesAtZero + '\n');
