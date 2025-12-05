@@ -6,11 +6,12 @@ internal class Program
 {
     static void Main()
     {
-        //Day2 day2 = new Day2();
-        //day2.Main();
-        //Day3 day3 = new Day3();
-        //day3.Main();
-        Day4 day4 = new Day4();
-        day4.Main();
+        //Day2 day = new Day2();
+        //Day3 day = new Day3();
+         //Day4 day = new Day4();
+         Day5 day = new Day5();
+
+
+        day.Main();
     }
 }
