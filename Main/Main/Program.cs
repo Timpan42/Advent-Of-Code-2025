@@ -10,7 +10,9 @@ internal class Program
         //Day3 day = new Day3();
         //Day4 day = new Day4();
         //Day5 day = new Day5();
-        Day6 day = new Day6();
+        //Day6 day = new Day6();
+        Day7 day = new Day7();
+
 
         day.Main();
     }
