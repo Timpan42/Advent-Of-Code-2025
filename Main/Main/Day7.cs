@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.Marshalling;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -31,8 +32,19 @@ namespace Main
                 line = sr.ReadLine();
             }
 
-            // ProcessP1();
-            ProcessP2();
+            ProcessP1();
+
+            (int Y, int X) start = (0, 0);
+
+            for (int i = 0; i < grid.GetUpperBound(1); i++)
+            {
+                if (grid[0, i] == 'S')
+                {
+                    start = (0, i);
+                }
+            }
+
+            totalSplits = ProcessP2(start.Y, start.X);
 
             for (int i = 0; i < grid.GetUpperBound(0); i++)
             {
@@ -85,7 +97,7 @@ namespace Main
             {
                 if (grid[indexSet.Y, indexSet.X] == '^')
                 {
-                    totalSplits++;
+                    //totalSplits++;
                     if (!indexesToAddLine.Contains((indexSet.Y, indexSet.X + 1)) && !toAdd.Contains((indexSet.Y, indexSet.X + 1)))
                     {
                         toAdd.Add((indexSet.Y, (indexSet.X + 1)));
@@ -113,71 +125,26 @@ namespace Main
             WorkOn(ref indexesToAddLine);
         }
 
-        private void ProcessP2()
+        private int ProcessP2(int Y, int X)
         {
-            List<(int Y, int X)> indexesToAddLine = new List<(int Y, int X)>();
-
-            for (int i = 0; i < grid.GetUpperBound(0); i++)
+            int val = 0;
+            if (Y == grid.GetUpperBound(0) - 1)
             {
-                WorkOnP2(ref indexesToAddLine);
-                indexesToAddLine.Clear();
-
-
-                for (int j = 0; j < grid.GetUpperBound(1); j++)
-                {
-                    if (grid[i, j] == 'S' || grid[i, j] == '|')
-                    {
-                        indexesToAddLine.Add((i + 1, j));
-                        continue;
-                    }
-                }
-
-
-            }
-        }
-
-        private void WorkOnP2(ref List<(int Y, int X)> indexesToAddLine)
-        {
-            if (indexesToAddLine.Count <= 0)
-            {
-                return;
+                return 1;
             }
 
-            List<(int Y, int X)> toAdd = new List<(int Y, int X)>();
-
-            foreach (var indexSet in indexesToAddLine)
+            if (grid[Y, X] == '|' || grid[Y, X] == 'S')
             {
-                if (grid[indexSet.Y, indexSet.X] == '^')
-                {
-                    totalSplits++;
-                    toAdd.Add((indexSet.Y, (indexSet.X + 1)));
-                    if (!indexesToAddLine.Contains((indexSet.Y, indexSet.X + 1)))
-                    {
-                    }
-                    if (!indexesToAddLine.Contains((indexSet.Y, indexSet.X - 1)))
-                    {
-                    }
-                    totalSplits++;
-
-                    toAdd.Add((indexSet.Y, (indexSet.X - 1)));
-                    continue;
-                }
-
-                if (grid[indexSet.Y, indexSet.X] == '.')
-                {
-                    grid[indexSet.Y, indexSet.X] = '|';
-                }
+                return ProcessP2(Y + 1, X);
+            }
+            else if (grid[Y, X] == '^')
+            {
+                val += ProcessP2(Y, X - 1);
+                val += ProcessP2(Y, X + 1);
             }
 
+            return val;
 
-
-            indexesToAddLine.Clear();
-
-            foreach (var item in toAdd)
-            {
-                indexesToAddLine.Add(item);
-            }
-            WorkOnP2(ref indexesToAddLine);
         }
 
     }
